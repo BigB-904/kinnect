@@ -13,6 +13,7 @@ class StoryEditorActivity : AppCompatActivity() {
         findViewById<android.widget.TextView>(R.id.btnCloseEditor).setOnClickListener {
             finish()
         }
+        // using intent to make navigation from this to the next activity
 
         findViewById<android.widget.TextView>(R.id.btnShareStory).setOnClickListener {
             val intent = Intent(this, YourStoryActivity::class.java)

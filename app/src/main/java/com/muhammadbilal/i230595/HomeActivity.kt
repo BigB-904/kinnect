@@ -9,10 +9,12 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+        // using intent to make navigation from this to the next activity
 
         findViewById<android.widget.TextView>(R.id.btnSearch).setOnClickListener {
             startActivity(Intent(this, SearchActivity::class.java))
         }
+        // using intent to make navigation from this to the next activity
 
         findViewById<android.widget.FrameLayout>(R.id.btnChats).setOnClickListener {
             startActivity(Intent(this, ChatsActivity::class.java))

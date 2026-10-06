@@ -13,6 +13,7 @@ class ChatActivity : AppCompatActivity() {
         findViewById<android.widget.TextView>(R.id.btnBack).setOnClickListener {
             onBackPressedDispatcher.onBackPressed()
         }
+        // using intent to make navigation from this to the next activity
 
         findViewById<android.widget.TextView>(R.id.btnVoiceCall).setOnClickListener {
             startActivity(Intent(this, VoiceCallActivity::class.java))

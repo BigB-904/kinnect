@@ -13,6 +13,7 @@ class ChatsActivity : AppCompatActivity() {
         findViewById<android.widget.TextView>(R.id.btnBack).setOnClickListener {
             onBackPressedDispatcher.onBackPressed()
         }
+        // using intent to make navigation from this to the next activity
 
         findViewById<android.widget.LinearLayout>(R.id.rowChatAisha).setOnClickListener {
             startActivity(Intent(this, ChatActivity::class.java))

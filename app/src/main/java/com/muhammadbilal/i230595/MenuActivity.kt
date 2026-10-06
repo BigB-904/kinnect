@@ -9,6 +9,7 @@ class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
+        // using intent to make navigation from this to the next activity
 
         findViewById<android.widget.TextView>(R.id.btnSearch).setOnClickListener {
             startActivity(Intent(this, SearchActivity::class.java))

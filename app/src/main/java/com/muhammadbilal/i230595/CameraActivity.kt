@@ -13,7 +13,7 @@ class CameraActivity : AppCompatActivity() {
         findViewById<android.widget.TextView>(R.id.btnCloseCamera).setOnClickListener {
             finish()
         }
-
+        // using intent to make navigation from this to the next activity
         findViewById<android.widget.TextView>(R.id.btnShutter).setOnClickListener {
             startActivity(Intent(this, StoryEditorActivity::class.java))
         }

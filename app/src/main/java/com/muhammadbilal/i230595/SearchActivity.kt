@@ -13,6 +13,7 @@ class SearchActivity : AppCompatActivity() {
         findViewById<android.widget.TextView>(R.id.btnBack).setOnClickListener {
             onBackPressedDispatcher.onBackPressed()
         }
+        // using intent to make navigation from this to the next activity
 
         findViewById<android.widget.LinearLayout>(R.id.rowOmarFarooq).setOnClickListener {
             startActivity(Intent(this, OtherProfileActivity::class.java))
