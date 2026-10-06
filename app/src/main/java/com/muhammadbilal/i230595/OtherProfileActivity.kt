@@ -1,0 +1,16 @@
+package com.muhammadbilal.i230595
+
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+
+class OtherProfileActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_other_profile)
+
+        findViewById<android.widget.TextView>(R.id.btnBack).setOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
+    }
+}

@@ -1,0 +1,61 @@
+package com.muhammadbilal.i230595
+
+import android.content.Intent
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+
+class HomeActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_home)
+
+        findViewById<android.widget.TextView>(R.id.btnSearch).setOnClickListener {
+            startActivity(Intent(this, SearchActivity::class.java))
+        }
+
+        findViewById<android.widget.FrameLayout>(R.id.btnChats).setOnClickListener {
+            startActivity(Intent(this, ChatsActivity::class.java))
+        }
+
+        findViewById<android.widget.TextView>(R.id.tabFriends).setOnClickListener {
+            startActivity(Intent(this, FriendsActivity::class.java))
+        }
+
+        findViewById<android.widget.TextView>(R.id.tabMarketplace).setOnClickListener {
+            startActivity(Intent(this, MarketplaceActivity::class.java))
+        }
+
+        findViewById<android.widget.TextView>(R.id.tabNotifications).setOnClickListener {
+            startActivity(Intent(this, NotificationsActivity::class.java))
+        }
+
+        findViewById<android.widget.TextView>(R.id.tabMenu).setOnClickListener {
+            startActivity(Intent(this, MenuActivity::class.java))
+        }
+
+        findViewById<android.widget.TextView>(R.id.btnMyAvatar).setOnClickListener {
+            startActivity(Intent(this, ProfileActivity::class.java))
+        }
+
+        findViewById<android.widget.TextView>(R.id.btnComment).setOnClickListener {
+            startActivity(Intent(this, CommentsActivity::class.java))
+        }
+
+        findViewById<android.widget.TextView>(R.id.btnLike).setOnClickListener {
+            startActivity(Intent(this, ReactionPickerActivity::class.java))
+        }
+
+        findViewById<android.widget.TextView>(R.id.btnCreatePostField).setOnClickListener {
+            startActivity(Intent(this, CreatePostActivity::class.java))
+        }
+
+        findViewById<android.widget.FrameLayout>(R.id.btnCreateStory).setOnClickListener {
+            startActivity(Intent(this, CameraActivity::class.java))
+        }
+
+        findViewById<android.widget.FrameLayout>(R.id.btnStoryOmar).setOnClickListener {
+            startActivity(Intent(this, StoryViewerActivity::class.java))
+        }
+    }
+}
